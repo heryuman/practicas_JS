@@ -1,0 +1,35 @@
+
+@api=http://localhost:4000/products
+
+GET {{api}}
+
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name":"microfono",
+    "description":"micfono shure"
+}
+###
+
+GET {{api}}/2
+
+###
+
+DELETE {{api}}/5
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+    "name":"Laptop hp",
+    "description":"gaming laptop hp",
+    "quantity":300
+}
